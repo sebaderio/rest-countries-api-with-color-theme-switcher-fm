@@ -1,6 +1,8 @@
 const appConfig = {
-    apiUrl: `${
-        process.env.VERCEL_URL ? process.env.VERCEL_URL : "http://0.0.0.0:3000"
+    apiUrl: `https://${
+        process.env.NEXT_PUBLIC_VERCEL_URL
+            ? process.env.NEXT_PUBLIC_VERCEL_URL
+            : "0.0.0.0:3000"
     }/api`,
     cors: {
         headers: {

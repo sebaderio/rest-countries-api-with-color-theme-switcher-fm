@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --COLOR-BACKGROUND-DARK: hsl(207, 26%, 17%);
+    --COLOR-ELEMENTS-DARK: hsl(209, 23%, 22%);
+    --COLOR-TEXT-DARK: hsl(0, 0%, 100%);
+    --COLOR-SHADOW-DARK: HSL(207, 26%, 15%);
+
+    --COLOR-BACKGROUND-LIGHT: hsl(0, 0%, 98%);
+    --COLOR-ELEMENTS-LIGHT: hsl(0, 0%, 100%);
+    --COLOR-TEXT-LIGHT: hsl(200, 15%, 8%);
+    --COLOR-SHADOW-LIGHT: rgba(0, 0, 0, 0.04);
+
+    --COLOR-BACKGROUND: var(--COLOR-BACKGROUND-LIGHT);
+    --COLOR-ELEMENTS: var(--COLOR-ELEMENTS-LIGHT);
+    --COLOR-TEXT: var(--COLOR-TEXT-LIGHT);
+    --COLOR-SHADOW: var(--COLOR-SHADOW-LIGHT);
+
+    --FONT-THIN: 300;
+    --FONT-REGULAR: 600;
+    --FONT-BOLD: 800;
+
+    --FONT-SIZE-1: 15px;
+    --FONT-SIZE-2: 16px;
+}
+
+// It is possible to add more themes. Just add another section here
+// and adjust the implementation of ThemeSwitch component to allow clients
+// to select one of available themes
+[data-theme="light"] {
+    --COLOR-BACKGROUND: var(--COLOR-BACKGROUND-LIGHT);
+    --COLOR-ELEMENTS: var(--COLOR-ELEMENTS-LIGHT);
+    --COLOR-TEXT: var(--COLOR-TEXT-LIGHT);
+    --COLOR-SHADOW: var(--COLOR-SHADOW-LIGHT);
+}
+
+[data-theme="dark"] {
+    --COLOR-BACKGROUND: var(--COLOR-BACKGROUND-DARK);
+    --COLOR-ELEMENTS: var(--COLOR-ELEMENTS-DARK);
+    --COLOR-TEXT: var(--COLOR-TEXT-DARK);
+    --COLOR-SHADOW: var(--COLOR-SHADOW-DARK);
+}
+
+html {
+    --FONT-FAMILY: var(--FONT-NUNITO-SANS);
+    --SHADOW: var(--COLOR-SHADOW) 0px 3px 5px;
+}
+
+body {
+    font-family: var(--FONT-FAMILY);
+    font-size: var(--FONT-SIZE-1);
+    font-weight: var(--FONT-REGULAR);
+    background: var(--COLOR-BACKGROUND);
+    color: var(--COLOR-TEXT);
+    transition: all 100ms;
+}
+
+.not_found {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+
+    .not_found__text {
+        font-size: 3rem;
+    }
+}

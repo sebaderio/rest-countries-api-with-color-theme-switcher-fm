@@ -1,0 +1,12 @@
+.feature {
+    padding: 0.1rem;
+}
+
+.feature__name {
+    display: inline-block;
+}
+
+.feature__value {
+    display: inline-block;
+    font-weight: var(--FONT-THIN);
+}

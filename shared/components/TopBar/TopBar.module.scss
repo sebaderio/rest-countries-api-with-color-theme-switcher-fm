@@ -1,0 +1,25 @@
+.topbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: var(--COLOR-ELEMENTS);
+    box-shadow: var(--SHADOW);
+}
+
+.topbar__content {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0.8rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar__content__title {
+    font-size: 1.5rem;
+    font-weight: var(--FONT-BOLD);
+    padding: 0.4rem 0;
+    padding-right: 1rem;
+    cursor: pointer;
+}

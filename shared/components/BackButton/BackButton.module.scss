@@ -1,0 +1,22 @@
+.back_button {
+    width: 84%;
+    margin: 0 8%;
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: var(--FONT-THIN);
+
+    .back_button__content {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .back_button {
+        padding: 2rem 0;
+    }
+}

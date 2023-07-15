@@ -1,0 +1,39 @@
+.country {
+    width: 260px;
+    aspect-ratio: 16 / 20;
+    border-radius: 0.3rem;
+    background-color: var(--COLOR-ELEMENTS);
+    box-shadow: var(--SHADOW);
+
+    :hover {
+        cursor: pointer;
+    }
+
+    .country__image {
+        width: 260px;
+        height: 160px;
+    }
+
+    .country__content {
+        padding: 1.5rem;
+
+        .country__title {
+            font-size: 1.2rem;
+            font-weight: var(--FONT-BOLD);
+            padding-bottom: 0.8rem;
+        }
+
+        .country__feature {
+            padding: 0.1rem;
+        }
+
+        .country__feature__name {
+            display: inline-block;
+        }
+
+        .country__feature__value {
+            display: inline-block;
+            font-weight: var(--FONT-THIN);
+        }
+    }
+}

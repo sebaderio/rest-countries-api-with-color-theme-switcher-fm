@@ -19,12 +19,14 @@ const SearchBox = ({
     const [searchTerm, setSearchTerm] = useState(initSearchTerm);
 
     const handleChange = (event: FormEvent<HTMLInputElement>) => {
+        // @ts-ignore
         setSearchTerm(event.target.value);
     };
 
     const handleSearch = () => searchHandler(searchTerm);
 
     const handleKeyDown = (event: FormEvent<HTMLInputElement>) => {
+        // @ts-ignore
         if (event.key === "Enter") {
             handleSearch();
         }

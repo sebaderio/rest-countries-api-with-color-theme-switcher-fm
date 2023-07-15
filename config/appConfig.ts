@@ -1,5 +1,7 @@
 const appConfig = {
-    apiUrl: "http://0.0.0.0:3000/api",
+    apiUrl: `${
+        process.env.VERCEL_URL ? process.env.VERCEL_URL : "http://0.0.0.0:3000"
+    }/api`,
     cors: {
         headers: {
             "Access-Control-Allow-Origin": "*",

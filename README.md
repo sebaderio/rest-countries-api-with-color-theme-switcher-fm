@@ -4,7 +4,7 @@ This is a full-stack, NextJS solution to the [REST Countries API with color them
 
 ## Links
 
-- [Solution URL](https://sebaderio.github.io/rest-countries-api-with-color-theme-switcher-fm/)
+- [Solution URL](https://rest-countries-api-with-color-theme-switcher-fm.vercel.app/)
 
 ## Getting Started
 
